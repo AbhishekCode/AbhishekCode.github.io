@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "https://www.indexzero.in/",
+  "homepage": "http://www.indexzero.in/",
   "private": true,
   "devDependencies": {
     "gh-pages": "^0.12.0",
