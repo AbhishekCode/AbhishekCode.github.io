@@ -44,7 +44,7 @@ export default class Links extends Component {
                 />
                 <IconButton style={iconButtonStyle}
                      tooltipStyles={tooltipStyles}
-                     href="https://www.twitter.com/abvishek" iconClassName={css(styles.blogIcon)} 
+                     href="https://medium.com/@Abvishek" iconClassName={css(styles.blogIcon)} 
                      tooltip="Blog"
                      tooltipPosition="top-center"
                 />
