@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "http://www.indexzero.in/",
+  "homepage": "http://abhishekcode.github.io",
   "private": true,
   "devDependencies": {
     "gh-pages": "^0.12.0",
