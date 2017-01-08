@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
-const profilePicUrl = 'https://pbs.twimg.com/profile_images/758268303496376320/2hxvfwrG_bigger.jpg';
+const profilePicUrl = 'https://pbs.twimg.com/profile_images/758268303496376320/2hxvfwrG_400x400.jpg';
 const imageSize = 200;
 const borderSize = 5;
 
