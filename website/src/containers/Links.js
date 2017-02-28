@@ -10,6 +10,7 @@ import linkedInicon from '../assets/linkedin.png';
 import emailIcon from '../assets/email.png';
 import githubicon from '../assets/github.png';
 import blogIcon from '../assets/blog.png';
+import stackoverflowIcon from '../assets/stackoverflow.png';
 
 const marginTop = -80;
 const iconSize = 40;
@@ -40,6 +41,12 @@ export default class Links extends Component {
                      tooltipStyles={tooltipStyles}
                      href="https://github.com/AbhishekCode" iconClassName={css(styles.githubicon)} 
                      tooltip="Github"
+                     tooltipPosition="top-center"
+                />
+                <IconButton style={iconButtonStyle}
+                     tooltipStyles={tooltipStyles}
+                     href="http://stackoverflow.com/users/2009703/abhishek" iconClassName={css(styles.soicon)} 
+                     tooltip="StackOverFlow"
                      tooltipPosition="top-center"
                 />
                 <IconButton style={iconButtonStyle}
@@ -140,6 +147,13 @@ const styles = StyleSheet.create({
     githubicon:{
               ...iconStyle,
        backgroundImage: 'url(' + githubicon + ')',
+       backgroundSize: iconSize,
+       backgroundPosition: 'center center',
+       backgroundRepeat: 'no-repeat',
+    },
+    soicon:{
+              ...iconStyle,
+       backgroundImage: 'url(' + stackoverflowIcon + ')',
        backgroundSize: iconSize,
        backgroundPosition: 'center center',
        backgroundRepeat: 'no-repeat',
