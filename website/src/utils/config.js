@@ -4,6 +4,9 @@ export function cardWidth() {
   if (cardWidth > 900) {
     return 900;
   }
+  if (cardWidth < 600) {
+    return width * 0.9;
+  }
   return cardWidth;
 }
 // common functions
