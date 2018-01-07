@@ -4,7 +4,7 @@ import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from "m
 import FlatButton from "material-ui/FlatButton";
 import { cardWidth, OpenSans } from "../utils/config";
 
-export default class ProfilePicture extends Component {
+export default class Projects extends Component {
   render() {
     const { project } = this.props;
     return (

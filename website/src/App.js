@@ -11,6 +11,7 @@ import ProfilePicture from "./containers/ProfilePicture";
 import Links from "./containers/Links";
 import Introduction from "./containers/Introduction";
 import Project from "./containers/Project";
+import Skills from "./containers/Skills";
 
 class App extends Component {
   render() {
@@ -20,6 +21,8 @@ class App extends Component {
           <ProfilePicture />
           <Links />
           <Introduction />
+          <h3 className={css(styles.projectHeading)}>Skills</h3>
+          <Skills />
           <h3 className={css(styles.projectHeading)}>Selected Projects</h3>
           {projectsdata.map((project, index) => <Project key={index} project={project} />)}
           <div className={css(styles.copyrightText)}>Abhishek Singh - Copyright © {new Date().getFullYear()}</div>
