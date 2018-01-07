@@ -1,19 +1,28 @@
-import React, { Component } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { StyleSheet, css } from 'aphrodite';
-import './App.css';
+import React, { Component } from "react";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import { StyleSheet, css } from "aphrodite";
+import "./App.css";
 
-import {getWidth, getHeight} from './utils/config';
-import ProfilePicture from './containers/ProfilePicture';
-import Links from './containers/Links';
+import RaisedButton from "material-ui/RaisedButton";
+
+import { getWidth, getHeight, OpenSans } from "./utils/config";
+import projectsdata from "./utils/projectsdata";
+import ProfilePicture from "./containers/ProfilePicture";
+import Links from "./containers/Links";
+import Introduction from "./containers/Introduction";
+import Project from "./containers/Project";
 
 class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
         <div className={css(styles.app)}>
-           <ProfilePicture />
-           <Links/>
+          <ProfilePicture />
+          <Links />
+          <Introduction />
+          <h3 className={css(styles.projectHeading)}>Selected Projects</h3>
+          {projectsdata.map((project, index) => <Project key={index} project={project} />)}
+          <div className={css(styles.copyrightText)}>Abhishek Singh - Copyright © {new Date().getFullYear()}</div>
         </div>
       </MuiThemeProvider>
     );
@@ -21,15 +30,31 @@ class App extends Component {
 }
 
 const styles = StyleSheet.create({
-    app: {
-       display: 'flex',
-       flex: 1,
-       flexDirection:'column',
-       justifyContent: 'flex-start',
-       height: getHeight(),
-       width: getWidth(),
-       backgroundColor: '#008080',
-    }
+  app: {
+    display: "flex",
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    minHeight: getHeight(),
+    height: "auto",
+    width: getWidth(),
+    backgroundColor: "#3a4556",
+    fontFamily: OpenSans
+  },
+  projectHeading: {
+    color: "#fff",
+    fontFamily: OpenSans,
+    fontSize: 25,
+    fontWeight: 600,
+    textDecoration: "underline"
+  },
+  copyrightText: {
+    color: "#fff",
+    fontFamily: OpenSans,
+    fontSize: 15,
+    fontWeight: 400
+  }
 });
 
 export default App;
