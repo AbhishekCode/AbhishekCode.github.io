@@ -38,6 +38,7 @@ export default class Links extends Component {
 
         <div className={css(styles.socialIconContainer)}>
           <IconButton
+            target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
             href="https://github.com/AbhishekCode"
@@ -46,6 +47,7 @@ export default class Links extends Component {
             tooltipPosition="top-center"
           />
           <IconButton
+            target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
             href="http://stackoverflow.com/users/2009703/abhishek"
@@ -54,6 +56,7 @@ export default class Links extends Component {
             tooltipPosition="top-center"
           />
           <IconButton
+            target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
             href="https://medium.com/@Abvishek"
@@ -62,6 +65,7 @@ export default class Links extends Component {
             tooltipPosition="top-center"
           />
           <IconButton
+            target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
             href="https://www.twitter.com/abvishek"
@@ -70,6 +74,7 @@ export default class Links extends Component {
             tooltipPosition="top-center"
           />
           <IconButton
+            target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
             href="https://www.facebook.com/AbhishekSingh1313"
@@ -78,6 +83,7 @@ export default class Links extends Component {
             tooltipPosition="top-center"
           />
           <IconButton
+            target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
             href="https://in.linkedin.com/in/abhisheksingh1313"
