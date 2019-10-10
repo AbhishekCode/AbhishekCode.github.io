@@ -4,18 +4,23 @@
   "homepage": "https://abhishekcode.github.io/",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.8.4"
+    "react-scripts": "3.2.0"
   },
   "dependencies": {
     "aphrodite": "^1.1.0",
-    "material-ui": "^0.16.6",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

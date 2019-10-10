@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { StyleSheet, css } from "aphrodite";
-import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from "material-ui/Card";
-import FlatButton from "material-ui/FlatButton";
 import { cardWidth, OpenSans } from "../utils/config";
 
 export default class ProfilePicture extends Component {
@@ -11,16 +9,16 @@ export default class ProfilePicture extends Component {
   };
   render() {
     return (
-      <Card className={css(styles.container)}>
-        <CardTitle title="About Me" subtitle="" />
-        <CardText className={css(styles.cardTexts)}>
+      <div className={css(styles.container)}>
+        <div title="About Me" subtitle="" />
+        <div className={css(styles.cardTexts)}>
           Software Developer with more than 4 years of experience. I have worked on various Websites, mobile applications and Games. I like
           to build user interface. <br /> <br />Currently I'm doing frontend development using ReactJs and React-Native.{" "}
-        </CardText>
-        <CardActions>
-          <FlatButton label="My Resume" onClick={this.openResume} />
-        </CardActions>
-      </Card>
+        </div>
+        <div>
+          <div label="My Resume" onClick={this.openResume} />
+        </div>
+      </div>
     );
   }
 }

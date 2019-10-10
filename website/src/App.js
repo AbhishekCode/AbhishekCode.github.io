@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import { StyleSheet, css } from "aphrodite";
 import "./App.css";
-
-import RaisedButton from "material-ui/RaisedButton";
-
 import { getWidth, getHeight, OpenSans } from "./utils/config";
 import projectsdata from "./utils/projectsdata";
 import ProfilePicture from "./containers/ProfilePicture";
@@ -16,18 +12,16 @@ import Skills from "./containers/Skills";
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider>
-        <div className={css(styles.app)}>
-          <ProfilePicture />
-          <Links />
-          <Introduction />
-          <h3 className={css(styles.projectHeading)}>Skills</h3>
-          <Skills />
-          <h3 className={css(styles.projectHeading)}>Selected Projects</h3>
-          {projectsdata.map((project, index) => <Project key={index} project={project} />)}
-          <div className={css(styles.copyrightText)}>Abhishek Singh - Copyright © {new Date().getFullYear()}</div>
-        </div>
-      </MuiThemeProvider>
+      <div className={css(styles.app)}>
+        <ProfilePicture />
+        <Links />
+        <Introduction />
+        <h3 className={css(styles.projectHeading)}>Skills</h3>
+        <Skills />
+        <h3 className={css(styles.projectHeading)}>Selected Projects</h3>
+        {projectsdata.map((project, index) => <Project key={index} project={project} />)}
+        <div className={css(styles.copyrightText)}>Abhishek Singh - Copyright © {new Date().getFullYear()}</div>
+      </div>
     );
   }
 }

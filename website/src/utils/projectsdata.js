@@ -1,5 +1,14 @@
 const projects = [
   {
+    name: "Instarem mobile app",
+    icon:
+      "https://firebasestorage.googleapis.com/v0/b/storage-f6fd7.appspot.com/o/AAEAAQAAAAAAAAg9AAAAJDI5YzRhNzljLWUxNzYtNGUzZi04ZTk2LWYxZWI3ZmE0OTM3MA.png?alt=media&token=974e490f-2cfd-4a7e-b338-303056bdac10",
+    description: "Send money overseas",
+    tech: "React-native, Redux",
+    contribution: undefined,
+    url: "https://play.google.com/store/apps/details?id=com.instarem.mobileapp&hl=en"
+  },
+  {
     name: "Smaken",
     icon:
       "https://firebasestorage.googleapis.com/v0/b/storage-f6fd7.appspot.com/o/smaken_logo.png?alt=media&token=7400930a-cd91-4f1a-8ef4-bcf45c73b040",

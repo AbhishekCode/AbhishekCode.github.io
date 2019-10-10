@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import { StyleSheet, css } from "aphrodite";
-import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from "material-ui/Card";
-import FlatButton from "material-ui/FlatButton";
 import { cardWidth, OpenSans } from "../utils/config";
 
 export default class Skills extends Component {
   render() {
     return (
-      <Card className={css(styles.container)}>
+      <div className={css(styles.container)}>
         <div className={css(styles.cardTexts)}>
           <ul>
             <li>
@@ -31,7 +29,7 @@ export default class Skills extends Component {
             </li>
           </ul>
         </div>
-      </Card>
+      </div>
     );
   }
 }

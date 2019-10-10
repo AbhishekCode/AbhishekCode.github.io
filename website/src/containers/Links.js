@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import { StyleSheet, css } from "aphrodite";
-import { fullWhite } from "material-ui/styles/colors";
-import RaisedButton from "material-ui/RaisedButton";
-import IconButton from "material-ui/IconButton";
 
 import fbicon from "../assets/fb.png";
 import twittericon from "../assets/twitter.png";
@@ -37,7 +34,14 @@ export default class Links extends Component {
         <span className={css(styles.name)}>Abhishek Singh</span>
 
         <div className={css(styles.socialIconContainer)}>
-          <IconButton
+          <div> <div target="_blank"
+            style={iconButtonStyle}
+            tooltipStyles={tooltipStyles}
+            href="https://github.com/AbhishekCode"
+            iconClassName={css(styles.githubicon)}
+            tooltip="Github"
+            tooltipPosition="top-center"></div></div>
+          <div
             target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
@@ -46,7 +50,7 @@ export default class Links extends Component {
             tooltip="Github"
             tooltipPosition="top-center"
           />
-          <IconButton
+          <div
             target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
@@ -55,7 +59,7 @@ export default class Links extends Component {
             tooltip="StackOverFlow"
             tooltipPosition="top-center"
           />
-          <IconButton
+          <div
             target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
@@ -64,7 +68,7 @@ export default class Links extends Component {
             tooltip="Blog"
             tooltipPosition="top-center"
           />
-          <IconButton
+          <div
             target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
@@ -73,7 +77,7 @@ export default class Links extends Component {
             tooltip="Twitter"
             tooltipPosition="top-center"
           />
-          <IconButton
+          <div
             target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
@@ -82,7 +86,7 @@ export default class Links extends Component {
             tooltip="Facebook"
             tooltipPosition="top-center"
           />
-          <IconButton
+          <div
             target="_blank"
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
@@ -91,7 +95,7 @@ export default class Links extends Component {
             tooltip="LinkedIn"
             tooltipPosition="top-center"
           />
-          <IconButton
+          <div
             style={iconButtonStyle}
             tooltipStyles={tooltipStyles}
             href="mailto:abhishekcode1@gmail.com"
