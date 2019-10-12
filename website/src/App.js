@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, css } from "aphrodite";
+import styled from 'styled-components'
 import "./App.css";
 import { getWidth, getHeight, OpenSans } from "./utils/config";
 import projectsdata from "./utils/projectsdata";
@@ -8,50 +8,36 @@ import Links from "./containers/Links";
 import Introduction from "./containers/Introduction";
 import Project from "./containers/Project";
 import Skills from "./containers/Skills";
+import { SmallHeading } from "./components/heading";
+import { myInfo } from "./utils/info";
 
 class App extends Component {
   render() {
     return (
-      <div className={css(styles.app)}>
-        <ProfilePicture />
-        <Links />
-        <Introduction />
-        <h3 className={css(styles.projectHeading)}>Skills</h3>
+      <AppContainer>
+        <ProfilePicture image={myInfo.image} />
+        <Links name={myInfo.name} contactLinks={myInfo.contactLinks} />
+        <Introduction introduction={myInfo.introduction} resume={myInfo.resume} />
+        <SmallHeading>Skills</SmallHeading>
         <Skills />
-        <h3 className={css(styles.projectHeading)}>Selected Projects</h3>
+        <SmallHeading>Portfolio</SmallHeading>
         {projectsdata.map((project, index) => <Project key={index} project={project} />)}
-        <div className={css(styles.copyrightText)}>Abhishek Singh - Copyright © {new Date().getFullYear()}</div>
-      </div>
+        <SmallHeading>{myInfo.name} - Copyright © {new Date().getFullYear()}</SmallHeading>
+      </AppContainer>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  app: {
-    display: "flex",
-    flex: 1,
-    flexDirection: "column",
-    justifyContent: "flex-start",
-    alignItems: "center",
-    minHeight: getHeight(),
-    height: "auto",
-    width: getWidth(),
-    backgroundColor: "#3a4556",
-    fontFamily: OpenSans
-  },
-  projectHeading: {
-    color: "#fff",
-    fontFamily: OpenSans,
-    fontSize: 25,
-    fontWeight: 600,
-    textDecoration: "underline"
-  },
-  copyrightText: {
-    color: "#fff",
-    fontFamily: OpenSans,
-    fontSize: 15,
-    fontWeight: 400
-  }
-});
-
+const AppContainer = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: ${getHeight()}px;
+  height: auto;
+  width: ${getWidth()}px;
+  background-color: #3a4556;
+  font-family: ${OpenSans}
+`
 export default App;

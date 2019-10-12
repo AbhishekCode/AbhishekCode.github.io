@@ -7,7 +7,6 @@
     "react-scripts": "3.2.0"
   },
   "dependencies": {
-    "aphrodite": "^1.1.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },

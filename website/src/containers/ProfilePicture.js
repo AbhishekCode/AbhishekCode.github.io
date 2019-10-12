@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 
-import profileImage from '../assets/profile.png'
 const imageSize = 200;
 const borderSize = 5;
 
 export default class ProfilePicture extends Component {
   render() {
+    const { image } = this.props
     return (
       <ProfileViewContainer>
         <ImageContainer>
-          <img src={profileImage} height={imageSize} width={imageSize} alt="profile" />
+          <img src={image} height={imageSize} width={imageSize} alt="profile" />
         </ImageContainer>
       </ProfileViewContainer>
     );

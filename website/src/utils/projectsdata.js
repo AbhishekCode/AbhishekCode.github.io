@@ -1,30 +1,32 @@
 const projects = [
   {
-    name: "Instarem mobile app",
+    name: "",
     icon:
-      "https://firebasestorage.googleapis.com/v0/b/storage-f6fd7.appspot.com/o/AAEAAQAAAAAAAAg9AAAAJDI5YzRhNzljLWUxNzYtNGUzZi04ZTk2LWYxZWI3ZmE0OTM3MA.png?alt=media&token=974e490f-2cfd-4a7e-b338-303056bdac10",
-    description: "Send money overseas",
-    tech: "React-native, Redux",
-    contribution: undefined,
-    url: "https://play.google.com/store/apps/details?id=com.instarem.mobileapp&hl=en"
+      "https://firebasestorage.googleapis.com/v0/b/storage-f6fd7.appspot.com/o/logo.png?alt=media&token=c5e1591d-4b62-4298-b784-7b793890fd0e",
+    description: "Worked on InstaReM's mobile application.",
+    tech: "React-Native, Redux, Objective-C, Java",
+    android: "https://play.google.com/store/apps/details?id=com.instarem.mobileapp&hl=en",
+    ios: "https://apps.apple.com/in/app/id1190075959",
+    url: "https://www.instarem.com"
   },
   {
     name: "Smaken",
     icon:
       "https://firebasestorage.googleapis.com/v0/b/storage-f6fd7.appspot.com/o/smaken_logo.png?alt=media&token=7400930a-cd91-4f1a-8ef4-bcf45c73b040",
-    description: "Food application where home chef can sell their dish.",
-    tech: "React, Redux, material-ui, laravel.",
+    description: "Created single page application in ReactJS where hobby chefs can sell their food.",
+    tech: "React, Redux, material-ui, PHP-laravel.",
     contribution: "I’m building single page react application using react, redux.",
-    url: "https://www.smakenvanthuis.nl/"
+    url: "https://www.smakenvanthuis.nl/",
   },
   {
     name: "IMMIDI",
     icon:
       "https://firebasestorage.googleapis.com/v0/b/storage-f6fd7.appspot.com/o/AAEAAQAAAAAAAAg9AAAAJDI5YzRhNzljLWUxNzYtNGUzZi04ZTk2LWYxZWI3ZmE0OTM3MA.png?alt=media&token=974e490f-2cfd-4a7e-b338-303056bdac10",
-    description: "Digital trade marketing platform.",
+    description: "Digital marketing platform. Contributed to a Web dashboard in ReactJS and mobile applications in React-Native",
     tech: "ReactJs, React Native, NodeJS, AWS.",
     contribution: "Helped in UI development of web console, Developed client applications in React-Naitve for different brands.",
-    url: "http://www.immidi.com/en/"
+    url: "http://www.immidi.com/en/",
+    android: "https://play.google.com/store/apps/details?id=com.immidi.sales&hl=en",
   },
   {
     name: "Bluff Party- Card game",

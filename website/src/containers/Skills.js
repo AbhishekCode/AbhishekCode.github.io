@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import { StyleSheet, css } from "aphrodite";
-import { cardWidth, OpenSans } from "../utils/config";
+import styled from 'styled-components'
+import { OpenSans } from "../utils/config";
+import { Card } from "../components/heading";
 
 export default class Skills extends Component {
   render() {
     return (
-      <div className={css(styles.container)}>
-        <div className={css(styles.cardTexts)}>
+      <Card>
+        <SkillText>
           <ul>
             <li>
               <strong>Programming Languesges</strong> HTML, CSS, JavaScript, Java, C#
@@ -28,31 +29,16 @@ export default class Skills extends Component {
               <strong>Operating System</strong> Mac , linux
             </li>
           </ul>
-        </div>
-      </div>
+        </SkillText>
+      </Card>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    width: cardWidth(),
-    zIndex: 2,
-    padding: 20,
-    margin: 20,
-    fontSize: 30,
-    fontWeight: 600,
-    color: "#000000"
-  },
-  cardTexts: {
-    width: "100%",
-    fontFamily: OpenSans,
-    fontSize: 16,
-    fontWeight: 300,
-    color: "#000000"
-  }
-});
+const SkillText = styled.div`
+  width: 100%;
+  font-family: ${OpenSans};
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+`
