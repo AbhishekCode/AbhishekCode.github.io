@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, css } from "aphrodite";
+import styled from 'styled-components'
 
 import fbicon from "../assets/fb.png";
 import twittericon from "../assets/twitter.png";
@@ -10,183 +10,99 @@ import blogIcon from "../assets/blog.png";
 import stackoverflowIcon from "../assets/stackoverflow.png";
 import { OpenSans } from "../utils/config";
 
-const marginTop = -80;
+const marginTop = -50;
 const iconSize = 40;
 
-const iconButtonStyle = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
-  padding: iconSize
-};
-const tooltipStyles = {
-  marginLeft: 15
-};
-const buttonStyle = {
-  margin: 12
-};
+const ContactLinks = [
+  {
+    icon: githubicon,
+    link: "https://github.com/AbhishekCode",
+    name: "github"
+  },
+  {
+    icon: stackoverflowIcon,
+    link: "http://stackoverflow.com/users/2009703/abhishek",
+    name: "StackOverFlow"
+  },
+  {
+    icon: blogIcon,
+    link: "https://medium.com/@Abvishek",
+    name: "blog"
+  },
+  {
+    icon: twittericon,
+    link: "https://www.twitter.com/abvishek",
+    name: "Twitter"
+  },
+  {
+    icon: fbicon,
+    link: "https://www.facebook.com/AbhishekSingh1313",
+    name: "facebook"
+  },
+  {
+    icon: linkedInicon,
+    link: "https://in.linkedin.com/in/abhisheksingh1313",
+    name: "LinkedIn"
+  },
+  {
+    icon: emailIcon,
+    link: "mailto:abhishekcode1@gmail.com",
+    name: "GMail"
+  },
+]
 
 export default class Links extends Component {
   render() {
     return (
-      <div className={css(styles.container)}>
-        <span className={css(styles.name)}>Abhishek Singh</span>
-
-        <div className={css(styles.socialIconContainer)}>
-          <div> <div target="_blank"
-            style={iconButtonStyle}
-            tooltipStyles={tooltipStyles}
-            href="https://github.com/AbhishekCode"
-            iconClassName={css(styles.githubicon)}
-            tooltip="Github"
-            tooltipPosition="top-center"></div></div>
-          <div
-            target="_blank"
-            style={iconButtonStyle}
-            tooltipStyles={tooltipStyles}
-            href="https://github.com/AbhishekCode"
-            iconClassName={css(styles.githubicon)}
-            tooltip="Github"
-            tooltipPosition="top-center"
-          />
-          <div
-            target="_blank"
-            style={iconButtonStyle}
-            tooltipStyles={tooltipStyles}
-            href="http://stackoverflow.com/users/2009703/abhishek"
-            iconClassName={css(styles.soicon)}
-            tooltip="StackOverFlow"
-            tooltipPosition="top-center"
-          />
-          <div
-            target="_blank"
-            style={iconButtonStyle}
-            tooltipStyles={tooltipStyles}
-            href="https://medium.com/@Abvishek"
-            iconClassName={css(styles.blogIcon)}
-            tooltip="Blog"
-            tooltipPosition="top-center"
-          />
-          <div
-            target="_blank"
-            style={iconButtonStyle}
-            tooltipStyles={tooltipStyles}
-            href="https://www.twitter.com/abvishek"
-            iconClassName={css(styles.twittericon)}
-            tooltip="Twitter"
-            tooltipPosition="top-center"
-          />
-          <div
-            target="_blank"
-            style={iconButtonStyle}
-            tooltipStyles={tooltipStyles}
-            href="https://www.facebook.com/AbhishekSingh1313"
-            iconClassName={css(styles.facebookIcon)}
-            tooltip="Facebook"
-            tooltipPosition="top-center"
-          />
-          <div
-            target="_blank"
-            style={iconButtonStyle}
-            tooltipStyles={tooltipStyles}
-            href="https://in.linkedin.com/in/abhisheksingh1313"
-            iconClassName={css(styles.linkedInIcon)}
-            tooltip="LinkedIn"
-            tooltipPosition="top-center"
-          />
-          <div
-            style={iconButtonStyle}
-            tooltipStyles={tooltipStyles}
-            href="mailto:abhishekcode1@gmail.com"
-            iconClassName={css(styles.emailIcon)}
-            tooltip="Email"
-            tooltipPosition="top-center"
-          />
-        </div>
-      </div>
+      <LinksViewContainer>
+        <Name>Abhishek Singh</Name>
+        <SocialIconContainer>
+          {ContactLinks.map(link =>
+            <Button onClick={() => window.open(link.link)}>
+              <img src={link.icon} height={iconSize} width={iconSize} alt={link.name} />
+            </Button>
+          )}
+        </SocialIconContainer>
+      </LinksViewContainer>
     );
   }
 }
 
-const iconStyle = {
-  width: iconSize,
-  height: iconSize
-};
 
-const styles = StyleSheet.create({
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "flex-start",
-    marginTop: marginTop,
-    padding: 20,
-    backgroundColor: "#3a4556"
-  },
-  name: {
-    marginTop: 40,
-    fontFamily: OpenSans,
-    fontSize: 30,
-    fontWeight: 600,
-    color: "white"
-  },
-  socialIconContainer: {
-    display: "flex",
-    flexWrap: "wrap",
-    alignItems: "center",
-    justifyContent: "center",
-    flexDirection: "row",
-    marginTop: 20,
-    backgroundColor: "transparent"
-  },
-  facebookIcon: {
-    ...iconStyle,
-    backgroundImage: "url(" + fbicon + ")",
-    backgroundSize: iconSize,
-    backgroundPosition: "center center",
-    backgroundRepeat: "no-repeat"
-  },
-  twittericon: {
-    ...iconStyle,
-    backgroundImage: "url(" + twittericon + ")",
-    backgroundSize: iconSize,
-    backgroundPosition: "center center",
-    backgroundRepeat: "no-repeat"
-  },
-  linkedInIcon: {
-    ...iconStyle,
-    backgroundImage: "url(" + linkedInicon + ")",
-    backgroundSize: iconSize,
-    backgroundPosition: "center center",
-    backgroundRepeat: "no-repeat"
-  },
-  emailIcon: {
-    ...iconStyle,
-    backgroundImage: "url(" + emailIcon + ")",
-    backgroundSize: iconSize,
-    backgroundPosition: "center center",
-    backgroundRepeat: "no-repeat"
-  },
-  githubicon: {
-    ...iconStyle,
-    backgroundImage: "url(" + githubicon + ")",
-    backgroundSize: iconSize,
-    backgroundPosition: "center center",
-    backgroundRepeat: "no-repeat"
-  },
-  soicon: {
-    ...iconStyle,
-    backgroundImage: "url(" + stackoverflowIcon + ")",
-    backgroundSize: iconSize,
-    backgroundPosition: "center center",
-    backgroundRepeat: "no-repeat"
-  },
-  blogIcon: {
-    ...iconStyle,
-    backgroundImage: "url(" + blogIcon + ")",
-    backgroundSize: iconSize,
-    backgroundPosition: "center center",
-    backgroundRepeat: "no-repeat"
-  }
-});
+const LinksViewContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: ${marginTop}px;
+  padding: 20px;
+  background-color: #3a4556;
+`
+
+const Name = styled.h1`
+  margin-top: 40px;
+  font-family: ${OpenSans};
+  font-size: 30px,
+  font-weight: 600;
+  color: white;
+`
+
+const SocialIconContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+  background-color: transparent;
+`
+
+const Button = styled.button`
+  background: transparent;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: none;
+`;
+
+
