@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from 'styled-components'
+import { Reveal, RevealGlobalStyles } from 'react-genie'
 import "./App.css";
 import { getWidth, getHeight, OpenSans } from "./utils/config";
 import projectsdata from "./utils/projectsdata";
@@ -15,14 +16,27 @@ class App extends Component {
   render() {
     return (
       <AppContainer>
-        <ProfilePicture image={myInfo.image} />
-        <Links name={myInfo.name} contactLinks={myInfo.contactLinks} />
-        <Introduction introduction={myInfo.introduction} resume={myInfo.resume} />
-        <SmallHeading>Skills</SmallHeading>
-        <Skills />
-        <SmallHeading>Portfolio</SmallHeading>
-        {projectsdata.map((project, index) => <Project key={index} project={project} />)}
-        <SmallHeading>{myInfo.name} - Copyright © {new Date().getFullYear()}</SmallHeading>
+        <RevealGlobalStyles />
+        <Reveal>
+          <ProfilePicture image={myInfo.image} />
+        </Reveal>
+        < Reveal>
+          <Links name={myInfo.name} contactLinks={myInfo.contactLinks} />
+        </Reveal>
+        <Reveal>
+          <Introduction introduction={myInfo.introduction} resume={myInfo.resume} />
+        </Reveal>
+        <Reveal>
+          <SmallHeading>Skills</SmallHeading>
+        </Reveal>
+        <Reveal>
+          <Skills />
+        </Reveal>
+        <Reveal>
+          <SmallHeading>Portfolio</SmallHeading>
+        </Reveal>
+        {projectsdata.map((project, index) => <Reveal><Project key={index} project={project} /></Reveal>)}
+        <Reveal> <SmallHeading>{myInfo.name} - Copyright © {new Date().getFullYear()}</SmallHeading></Reveal>
       </AppContainer>
     );
   }

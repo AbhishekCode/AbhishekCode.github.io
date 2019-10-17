@@ -29,7 +29,6 @@ const LinksViewContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: ${marginTop}px;
   padding: 20px;
   background-color: #3a4556;
 `

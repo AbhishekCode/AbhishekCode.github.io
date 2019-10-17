@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "react-genie": "^0.1.4",
+    "styled-components": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

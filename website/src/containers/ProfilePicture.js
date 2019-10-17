@@ -23,7 +23,6 @@ flex-direction: 'column';
 justify-content: 'center';
 align-items: 'center';
 z-index:2;
-padding: 20;
 `
 
 const ImageContainer = styled.div`
