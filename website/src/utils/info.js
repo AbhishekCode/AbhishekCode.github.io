@@ -6,47 +6,57 @@ import emailIcon from "../assets/email.png";
 import githubicon from "../assets/github.png";
 import blogIcon from "../assets/blog.png";
 import stackoverflowIcon from "../assets/stackoverflow.png";
+import webicon from '../assets/webicon.png'
 
-export const myInfo = {
-    image: profileImage,
-    name: "Abhishek Singh",
-    contactLinks: [
-        {
-            icon: githubicon,
-            link: "https://github.com/AbhishekCode",
-            name: "github"
-        },
-        {
-            icon: stackoverflowIcon,
-            link: "http://stackoverflow.com/users/2009703/abhishek",
-            name: "StackOverFlow"
-        },
-        {
-            icon: blogIcon,
-            link: "https://medium.com/@Abvishek",
-            name: "blog"
-        },
-        {
-            icon: twittericon,
-            link: "https://www.twitter.com/abvishek",
-            name: "Twitter"
-        },
-        {
-            icon: fbicon,
-            link: "https://www.facebook.com/AbhishekSingh1313",
-            name: "facebook"
-        },
-        {
-            icon: linkedInicon,
-            link: "https://in.linkedin.com/in/abhisheksingh1313",
-            name: "LinkedIn"
-        },
-        {
-            icon: emailIcon,
-            link: "mailto:abhishekcode1@gmail.com",
-            name: "GMail"
-        },
-    ],
-    introduction: "Software Developer with more than 4 years of experience. I have worked on various Websites, mobile applications and Games. I like to build user interface.<br/><br/> Currently I'm doing frontend development using ReactJs and React-Native.",
-    resume: "https://abhishekcode.github.io/resume/"
+const getIcon = (name) => {
+    switch (name) {
+        case "github":
+            return githubicon;
+        case "StackOverFlow":
+            return stackoverflowIcon;
+        case "blog":
+            return blogIcon;
+        case "Twitter":
+            return twittericon;
+        case "facebook":
+            return fbicon;
+        case "LinkedIn":
+            return linkedInicon
+        case "Email":
+            return emailIcon
+        default:
+            return webicon
+    }
+}
+
+
+export const myInfo = () => {
+    return new Promise((resolve, reject) => {
+        let url = "https://api.github.com/gists/9052ef9a070e0d5ab046fa3464d026c4";
+        fetch(url)
+            .then(response => {
+                if (response.status === 200) {
+                    response
+                        .json()
+                        .then(data => {
+                            console.log(data)
+                            let profileData = JSON.parse(data.files["personalData.json"].content)
+                            profileData.image = profileImage;
+                            profileData.contactLinks && profileData.contactLinks.forEach(element => {
+                                element.icon = getIcon(element.name)
+                            });
+                            let info = {
+                                personalData: profileData,
+                                projectData: JSON.parse(data.files["projectdata.json"].content)
+                            }
+                            resolve(info)
+                        })
+                }
+
+            })
+            .catch(error => {
+                reject(error);
+            });
+    })
+
 }

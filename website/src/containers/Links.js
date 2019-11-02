@@ -12,8 +12,8 @@ export default class Links extends Component {
       <LinksViewContainer>
         <Name>{name}</Name>
         <SocialIconContainer>
-          {contactLinks.map(link =>
-            <Button onClick={() => window.open(link.link)}>
+          {contactLinks && contactLinks.map((link, i) =>
+            <Button key={i} onClick={() => window.open(link.link)}>
               <img src={link.icon} height={iconSize} width={iconSize} alt={link.name} />
             </Button>
           )}

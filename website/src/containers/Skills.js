@@ -5,29 +5,19 @@ import { Card } from "../components/heading";
 
 export default class Skills extends Component {
   render() {
+    const { skills } = this.props;
     return (
       <Card>
         <SkillText>
           <ul>
-            <li>
-              <strong>Programming Languesges</strong> HTML, CSS, JavaScript, Java, C#
-            </li>
-            <br />
-            <li>
-              <strong>Framework/Libraries</strong> ReactJS, React-Native, Redux, Bootstrap
-            </li>
-            <br />
-            <li>
-              <strong> IDE:</strong> Netbeans , XCode , Visual Studio, Android Studio , Webstorm.
-            </li>
-            <br />
-            <li>
-              <strong>Source Control</strong> Git
-            </li>
-            <br />
-            <li>
-              <strong>Operating System</strong> Mac , linux
-            </li>
+            {
+              skills && skills.map((skill, i) => <React.Fragment key={i}>
+                <li>
+                  <strong>{skill.heading}</strong> {skill.value}
+                </li>
+                <br />
+              </React.Fragment>)
+            }
           </ul>
         </SkillText>
       </Card>

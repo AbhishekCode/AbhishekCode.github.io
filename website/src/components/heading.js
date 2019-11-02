@@ -50,4 +50,6 @@ export const Link = styled.button`
   margin: 1em;
   padding: 0.25em 1em;
   border: none;
+  color: blue;
+  text-decoration: underline;
 `
