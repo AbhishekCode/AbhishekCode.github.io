@@ -56,7 +56,7 @@ class App extends Component {
           <SmallHeading>Portfolio</SmallHeading>
         </Reveal>
         {projectsdata.map((project, index) => <Reveal key={index}><Project key={index} project={project} /></Reveal>)}
-        <Reveal> <SmallHeading>{myInfo.name} - Copyright © {new Date().getFullYear()}</SmallHeading></Reveal>
+        <Reveal> <SmallHeading>{profileData.name} - Copyright © {new Date().getFullYear()}</SmallHeading></Reveal>
       </AppContainer>
     );
   }
