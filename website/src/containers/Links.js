@@ -1,28 +1,29 @@
-import React, { Component } from "react";
-import styled from 'styled-components'
+import styled from "styled-components";
 import { Name } from "../components/heading";
 
 const marginTop = -50;
 const iconSize = 40;
 
-export default class Links extends Component {
-  render() {
-    const { name, contactLinks } = this.props;
-    return (
-      <LinksViewContainer>
-        <Name>{name}</Name>
-        <SocialIconContainer>
-          {contactLinks && contactLinks.map((link, i) =>
+export default function Links({ name, contactLinks }) {
+  return (
+    <LinksViewContainer>
+      <Name>{name}</Name>
+      <SocialIconContainer>
+        {contactLinks &&
+          contactLinks.map((link, i) => (
             <Button key={i} onClick={() => window.open(link.link)}>
-              <img src={link.icon} height={iconSize} width={iconSize} alt={link.name} />
+              <img
+                src={link.icon}
+                height={iconSize}
+                width={iconSize}
+                alt={link.name}
+              />
             </Button>
-          )}
-        </SocialIconContainer>
-      </LinksViewContainer>
-    );
-  }
+          ))}
+      </SocialIconContainer>
+    </LinksViewContainer>
+  );
 }
-
 
 const LinksViewContainer = styled.div`
   display: flex;
@@ -31,7 +32,7 @@ const LinksViewContainer = styled.div`
   justify-content: flex-start;
   padding: 20px;
   background-color: #3a4556;
-`
+`;
 const SocialIconContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -40,7 +41,7 @@ const SocialIconContainer = styled.div`
   flex-direction: row;
   margin-top: 20px;
   background-color: transparent;
-`
+`;
 
 const Button = styled.button`
   background: transparent;
@@ -49,5 +50,3 @@ const Button = styled.button`
   padding: 0.25em 1em;
   border: none;
 `;
-
-
