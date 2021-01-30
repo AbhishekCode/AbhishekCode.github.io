@@ -8,7 +8,7 @@ export default function HobbyProjects({ hobby }) {
       <ol>
         {hobby &&
           hobby.map(item => (
-            <ListContainer>
+            <ListContainer key={item.name}>
               <strong>{item.name}</strong>
               <p>{item.description}</p>
               <Link onClick={() => window.open(item.repo)}>Code</Link>
