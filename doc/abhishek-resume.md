@@ -1,8 +1,8 @@
 # Abhishek Kumar Singh
 
-## Technical Lead with 13+ Years of Full-Stack Web and Mobile Experience
+## Frontend-Focused Software Engineer with 13+ Years of Architecture and Performance
 
-Technical Lead with 13+ years building production web and mobile products. Specializes in React, Spring Boot, and React Native. Owns spec-driven end-to-end delivery at Personatech for enterprise event-tech SaaS. Shipped fintech apps at Nium/InstaReM. Builds scalable SPAs, testable architectures, and AI-accelerated developer workflows.
+Frontend-focused software engineer with 13+ years specializing in frontend architecture, performance optimization, and maintainable engineering. Delivers reliable UI experiences backed by testing, accessibility, and DevEx improvements. Helped build event-tech products acquired by Hyve and a SaaS platform serving 10+ clients — 1M+ meetings and $120M+ client revenue since 2023. Previously built fintech mobile apps at Nium/InstaReM.
 
 ## Contact Information
 
@@ -10,19 +10,22 @@ Pune, India | +91-9967596120 | abhishekcode1@gmail.com | [linkedin.com/in/abhish
 
 ## Skills
 
-Programming Languages: JavaScript | TypeScript | HTML5 | CSS3  
-Frameworks: React | Spring Boot | React Native | Node.js | REST APIs  
-Databases and Testing: PostgreSQL | DynamoDB | React Testing Library | Playwright | Jest  
-Tools and Architecture: Git | CI/CD | Amazon Web Services | Supabase | Single Page Applications | Progressive Web Apps | Component Libraries
+Programming Languages: Java | JavaScript | TypeScript | HTML5 | CSS3  
+Frontend: React | React Router | Component Libraries | Design Systems | Single Page Applications | Progressive Web Apps  
+Quality and Accessibility: React Testing Library | Playwright | Jest | WCAG Accessibility | Unit and Integration Testing  
+Performance and Architecture: Bundle Optimization | Lazy Loading | Core Web Vitals | Performance Optimization | Maintainable Code  
+Backend and Tools: Spring Boot | Node.js | REST APIs | React Native | Git | CI/CD | Amazon Web Services
 
 ## Work Experience
 
 **Personatech, Pune, India | Technical Lead | 03/2020 – Present**  
-*Technical Lead (04/2023 – Present) · Senior Software Engineer (03/2020 – 04/2023)*
+*Technical Lead title · Staff-level IC (04/2023 – Present) · Senior Software Engineer (03/2020 – 04/2023)*  
+*Event-tech SaaS — 10+ enterprise clients · 1M+ meetings · $120M+ client revenue since 2023*
 
-- **End-to-end full-stack delivery:** Led spec-driven features from Figma through React UI and Spring Boot APIs to production for an enterprise event networking platform used at global conferences.
-- **Design-to-deploy acceleration:** Built an AI-assisted Speckit workflow streamlining spec authoring through implementation, enabling faster independent full-stack shipping without handoffs.
-- **Frontend quality and leadership:** Established shared React component architecture, Playwright/React Testing Library coverage, and partnered with product and design on sprint planning for a distributed team.
+- **Vertical products:** Part of the team that built Retail Meetup and Fintech Meetup, vertical event networking products acquired by Hyve after strong market performance.
+- **Event-tech SaaS platform:** Helped set up and build the platform now serving 10+ enterprise clients; since 2023, powered 1M+ one-on-one meetings and $120M+ in additional revenue for clients.
+- **Frontend quality:** Own shared React component library and UI patterns; increased frontend test coverage from near 0% to 40% with Playwright and React Testing Library.
+- **Hands-on IC delivery:** Operate as a staff-level IC shipping features end-to-end from Figma through React UI and Spring Boot APIs; mentor junior engineers on a task basis. Improved delivery speed by ~50% using AI workflows and automation.
 
 **Nium (InstaReM), Mumbai, India | Senior Software Engineer | 02/2018 – 02/2020**
 

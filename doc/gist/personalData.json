@@ -1,7 +1,7 @@
 {
   "name": "Abhishek Kumar Singh",
-  "title": "Technical Lead",
-  "tagline": "Full-Stack Engineer · React · Spring Boot · Mobile",
+  "title": "Software Engineer",
+  "tagline": "Frontend-Focused Full-Stack · React · Spring Boot · Mobile",
   "location": "Pune, India",
   "email": "abhishekcode1@gmail.com",
   "phone": "+91-9967596120",
@@ -24,50 +24,42 @@
       "name": "Twitter"
     }
   ],
-  "introduction": "Technical lead and full-stack engineer with 13+ years building high-performance web and mobile products. At Personatech, I own spec-driven, end-to-end feature delivery — from design mockups through React frontend, Spring Boot backend, and production — using agentic AI workflows and Speckit to streamline design-to-deploy cycles. Previously built fintech mobile apps at scale (InstaReM/Nium). Side project: FitBuddy, a fitness app with on-device ML and LLM-powered coaching.",
+  "introduction": "Software engineer with 13+ years specializing in frontend architecture, performance optimization, and clean, maintainable engineering practices. I'm frontend-focused full-stack — I go deep on React, UI quality, testing, and accessibility, and ship end-to-end features across the stack including Spring Boot backends. At Personatech, I was part of the team that built Retail Meetup and Fintech Meetup (acquired by Hyve), then helped set up and build the event-tech SaaS platform now serving 10+ enterprise clients. Since 2023, the platform has powered 1M+ one-on-one meetings and $120M+ in additional revenue for clients. Also improved delivery speed by ~50% using AI workflows and raised frontend test coverage from near 0% to 40%. Previously built production fintech mobile apps at Nium/InstaReM.",
   "skills": [
     {
       "heading": "Frontend",
       "value": "React, TypeScript, JavaScript, React Router, HTML5, CSS3"
     },
     {
-      "heading": "Backend",
-      "value": "Spring Boot, Node.js, REST APIs"
+      "heading": "Frontend Architecture",
+      "value": "Component libraries, design systems, SPAs, SSR/PWA, performance optimization"
     },
     {
-      "heading": "Mobile",
-      "value": "React Native, iOS/Android deployment"
+      "heading": "Testing & Accessibility",
+      "value": "React Testing Library, Playwright, Jest, WCAG accessibility, unit & integration testing"
     },
     {
-      "heading": "Testing & Quality",
-      "value": "React Testing Library, Playwright, Jest, unit & integration testing"
+      "heading": "DevEx & Practices",
+      "value": "CI/CD, developer tooling, code quality standards, Git, Agile/Scrum"
     },
     {
-      "heading": "Architecture",
-      "value": "SPAs, SSR/PWA, component libraries, performance optimization"
-    },
-    {
-      "heading": "Delivery & AI",
-      "value": "Spec-driven development, Speckit, agentic AI workflows, technical mentoring"
-    },
-    {
-      "heading": "Tools & Practices",
-      "value": "Git, CI/CD, Agile/Scrum"
+      "heading": "Backend & Mobile",
+      "value": "Java, Spring Boot, Node.js, REST APIs, React Native, iOS/Android deployment"
     }
   ],
   "experience": [
     {
       "company": "Personatech",
-      "role": "Technical Lead",
+      "role": "Software Engineer",
       "period": "Mar 2020 – Present",
       "location": "Pune, India",
-      "subtitle": "AI event-tech SaaS platform powering revenue-generating networking programs for global enterprise events",
-      "roleLine": "Technical Lead (Apr 2023 – Present) · Senior Software Engineer (Mar 2020 – Apr 2023)",
+      "subtitle": "Event-tech SaaS — 10+ clients, 1M+ meetings, $120M+ client revenue since 2023",
+      "roleLine": "Software Engineer (Apr 2023 – Present) · Senior Software Engineer (Mar 2020 – Apr 2023)",
       "highlights": [
-        "Own end-to-end full-stack feature delivery using spec-driven development — from design mockups through React UI, Spring Boot APIs, testing, and production release.",
-        "Built a seamless design-to-production workflow combining agentic AI tooling and Speckit.",
-        "Ship full-stack features independently; translate product specs and Figma designs into production-ready, tested code.",
-        "Maintain shared UI component architecture and frontend quality standards with React Testing Library and Playwright."
+        "Part of the team that built Retail Meetup and Fintech Meetup, vertical event networking products acquired by Hyve after strong market performance.",
+        "Helped set up and build the event-tech SaaS platform now serving 10+ enterprise clients; since 2023, powered 1M+ one-on-one meetings and $120M+ in additional client revenue.",
+        "Own shared React component library and UI patterns; increased frontend test coverage from near 0% to 40% with Playwright and React Testing Library.",
+        "Ship features end-to-end from Figma through React UI and Spring Boot APIs; mentor junior engineers on a task basis. Improved delivery speed by ~50% using AI workflows and automation."
       ]
     },
     {
