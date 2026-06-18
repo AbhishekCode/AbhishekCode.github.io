@@ -62,11 +62,10 @@ export default function Hero({ profile }: HeroProps) {
             {resume && (
               <a
                 href={resume}
-                target="_blank"
-                rel="noopener noreferrer"
+                download="abhishek-resume.pdf"
                 className="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-700"
               >
-                View Resume
+                Download Resume
               </a>
             )}
             {contactLinks?.map((link, i) => (

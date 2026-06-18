@@ -40,7 +40,11 @@ const getIcon = (name: string): string => {
 };
 
 const enrichProfile = (profileData: PersonalData): PersonalData => {
-  const data: PersonalData = { ...profileData, image: profileImage };
+  const data: PersonalData = {
+    ...profileData,
+    image: profileImage,
+    resume: "/abhishek-resume.pdf",
+  };
 
   if (data.contactLinks) {
     data.contactLinks = data.contactLinks
