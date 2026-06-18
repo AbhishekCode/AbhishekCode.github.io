@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Personatech SaaS Platform",
+    "icon": "",
+    "description": "AI event-tech SaaS platform for revenue-generating networking programs at global enterprise events. End-to-end full-stack feature delivery across React frontend and Spring Boot backend.",
+    "tech": "React, Spring Boot, TypeScript, Playwright",
+    "role": "Technical Lead",
+    "url": "https://www.personatech.com"
+  },
+  {
+    "name": "InstaReM Mobile",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/storage-f6fd7.appspot.com/o/logo.png?alt=media&token=c5e1591d-4b62-4298-b784-7b793890fd0e",
+    "description": "Cross-border payments mobile application for InstaReM (Nium), serving production fintech users on iOS and Android.",
+    "tech": "React Native, Objective-C",
+    "role": "Senior Engineer",
+    "contribution": "Built and maintained the InstaReM mobile application.",
+    "android": "https://play.google.com/store/apps/details?id=com.instarem.mobileapp&hl=en",
+    "ios": "https://apps.apple.com/in/app/id1190075959",
+    "url": "https://www.instarem.com"
+  },
+  {
+    "name": "PhonePe Micro App",
+    "icon": "",
+    "description": "InstaReM integration micro app built for the PhonePe Switch platform, enabling in-app cross-border payment flows.",
+    "tech": "React Native",
+    "role": "Senior Engineer",
+    "url": "https://www.instarem.com"
+  },
+  {
+    "name": "Smaken",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/storage-f6fd7.appspot.com/o/smaken_logo.png?alt=media&token=7400930a-cd91-4f1a-8ef4-bcf45c73b040",
+    "description": "Single page application where hobby chefs can sell their food to customers in the Netherlands.",
+    "tech": "React, Material UI",
+    "role": "Lead Frontend",
+    "contribution": "Built the single page React application for hobby chefs marketplace.",
+    "url": "https://www.smakenvanthuis.nl/"
+  },
+  {
+    "name": "IMMIDI",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/storage-f6fd7.appspot.com/o/AAEAAQAAAAAAAAg9AAAAJDI5YzRhNzljLWUxNzYtNGUzZi04ZTk2LWYxZWI3ZmE0OTM3MA.png?alt=media&token=974e490f-2cfd-4a7e-b338-303056bdac10",
+    "description": "Digital marketing platform with a React web dashboard and React Native client apps for multiple brands.",
+    "tech": "React, React Native, Node.js, AWS",
+    "role": "Full Stack",
+    "contribution": "UI development of web console; developed client applications in React Native for different brands.",
+    "url": "http://www.immidi.com/en/",
+    "android": "https://play.google.com/store/apps/details?id=com.immidi.sales&hl=en"
+  },
+  {
+    "name": "Bluff Party — Card Game",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/storage-f6fd7.appspot.com/o/download.jpeg?alt=media&token=2d188a86-ae49-43bd-99db-72adbac98535",
+    "description": "2D multiplayer card game for iOS and Android with real-time multiplayer backend.",
+    "tech": "Unity3D, SmartFox, DynamoDB, AWS S3",
+    "role": "Game Developer",
+    "contribution": "Created game UI, gameplay, inventory system, card engine, and game tutorial.",
+    "url": "http://www.byofstudios.com/"
+  },
+  {
+    "name": "Legendary Strike",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/storage-f6fd7.appspot.com/o/legendary_strike.png?alt=media&token=8cee4ce5-1ae0-454b-86d1-7299ba2f2f0d",
+    "description": "2D platformer arcade game optimized for iOS devices, published on the App Store.",
+    "tech": "ImpactJS, Objective-C, Ejecta",
+    "role": "Game Developer",
+    "contribution": "Created game UI and gameplay; helped with performance optimization on mobile devices.",
+    "url": "http://legendarystrike.com/"
+  },
+  {
+    "name": "Poker Card Game",
+    "description": "Browser-based 2D multiplayer poker card game with real-time server backend.",
+    "tech": "ImpactJS, SmartFox Server, MySQL",
+    "role": "Game Developer",
+    "contribution": "Created game UI and hand evaluation system.",
+    "url": "http://nucasino.com/"
+  },
+  {
+    "name": "Apcolite Runner",
+    "description": "2D platformer promotional game built in Flash for Asian Paints Apcolite campaign.",
+    "tech": "Adobe Flash, ActionScript",
+    "role": "Game Developer",
+    "contribution": "Created game UI, gameplay, and Facebook login integration.",
+    "url": "https://www.asianpaints.com/campaign/apcolite/apcolite-runner.html"
+  }
+]

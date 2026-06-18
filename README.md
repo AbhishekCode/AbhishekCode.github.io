@@ -1,3 +1,9 @@
-This is repository of my personal website, It is hosted on Github pages.
+Personal website hosted on GitHub Pages.
 
-Actual code can be found inside `website` folder. Project is created using `create-react-app`. 
+Source lives in the `website` folder — **React 19 + Vite + TypeScript + Tailwind CSS**.
+
+```bash
+cd website
+npm install
+npm run dev
+```

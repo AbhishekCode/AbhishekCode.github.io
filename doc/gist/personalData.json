@@ -1,0 +1,140 @@
+{
+  "name": "Abhishek Kumar Singh",
+  "title": "Technical Lead",
+  "tagline": "Full-Stack Engineer · React · Spring Boot · Mobile",
+  "location": "Pune, India",
+  "email": "abhishekcode1@gmail.com",
+  "phone": "+91-9967596120",
+  "resume": "https://abhishekcode.github.io/doc/abhishek-resume-2026.html",
+  "contactLinks": [
+    {
+      "link": "https://www.linkedin.com/in/abhishekcode1/",
+      "name": "LinkedIn"
+    },
+    {
+      "link": "https://github.com/AbhishekCode",
+      "name": "github"
+    },
+    {
+      "link": "mailto:abhishekcode1@gmail.com",
+      "name": "Email"
+    },
+    {
+      "link": "https://www.twitter.com/AbhishekCode",
+      "name": "Twitter"
+    }
+  ],
+  "introduction": "Technical lead and full-stack engineer with 13+ years building high-performance web and mobile products. At Personatech, I own spec-driven, end-to-end feature delivery — from design mockups through React frontend, Spring Boot backend, and production — using agentic AI workflows and Speckit to streamline design-to-deploy cycles. Previously built fintech mobile apps at scale (InstaReM/Nium). Side project: FitBuddy, a fitness app with on-device ML and LLM-powered coaching.",
+  "skills": [
+    {
+      "heading": "Frontend",
+      "value": "React, TypeScript, JavaScript, React Router, HTML5, CSS3"
+    },
+    {
+      "heading": "Backend",
+      "value": "Spring Boot, Node.js, REST APIs"
+    },
+    {
+      "heading": "Mobile",
+      "value": "React Native, iOS/Android deployment"
+    },
+    {
+      "heading": "Testing & Quality",
+      "value": "React Testing Library, Playwright, Jest, unit & integration testing"
+    },
+    {
+      "heading": "Architecture",
+      "value": "SPAs, SSR/PWA, component libraries, performance optimization"
+    },
+    {
+      "heading": "Delivery & AI",
+      "value": "Spec-driven development, Speckit, agentic AI workflows, technical mentoring"
+    },
+    {
+      "heading": "Tools & Practices",
+      "value": "Git, CI/CD, Agile/Scrum"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Personatech",
+      "role": "Technical Lead",
+      "period": "Mar 2020 – Present",
+      "location": "Pune, India",
+      "subtitle": "AI event-tech SaaS platform powering revenue-generating networking programs for global enterprise events",
+      "roleLine": "Technical Lead (Apr 2023 – Present) · Senior Software Engineer (Mar 2020 – Apr 2023)",
+      "highlights": [
+        "Own end-to-end full-stack feature delivery using spec-driven development — from design mockups through React UI, Spring Boot APIs, testing, and production release.",
+        "Built a seamless design-to-production workflow combining agentic AI tooling and Speckit.",
+        "Ship full-stack features independently; translate product specs and Figma designs into production-ready, tested code.",
+        "Maintain shared UI component architecture and frontend quality standards with React Testing Library and Playwright."
+      ]
+    },
+    {
+      "company": "Nium (InstaReM)",
+      "role": "Senior Software Engineer",
+      "period": "Feb 2018 – Feb 2020",
+      "location": "Mumbai, India",
+      "highlights": [
+        "Built and maintained InstaReM cross-border payments mobile app in React Native (iOS & Android).",
+        "Integrated PhonePe Switch micro app; implemented security hardening for sensitive financial flows.",
+        "Owned App Store and Play Store release cycles for InstaReM and Amaze card app."
+      ]
+    },
+    {
+      "company": "Tekhne",
+      "role": "Web Application Developer",
+      "period": "Nov 2016 – Feb 2018",
+      "location": "Mumbai, India",
+      "highlights": [
+        "Developed Smaken food-ordering SPA (React, React Router) for the Netherlands market.",
+        "Improved page speed via lazy loading and bundle optimization."
+      ]
+    },
+    {
+      "company": "Courgette Concepts",
+      "role": "Full Stack JavaScript Developer",
+      "period": "Mar 2016 – Oct 2016",
+      "location": "Pune, India",
+      "highlights": [
+        "Built Immidi marketing dashboard in React and brand client apps in React Native.",
+        "Contributed to Node.js/Koa APIs and mobile app store deployments."
+      ]
+    },
+    {
+      "company": "BYOF Studios / CodeRed Solutions",
+      "role": "Game Developer",
+      "period": "May 2013 – Mar 2016",
+      "location": "Mumbai, India",
+      "highlights": [
+        "Shipped Bluff Party multiplayer card game (Unity3D) and browser-based poker games.",
+        "Published Legendary Strike HTML5 arcade game to the iOS App Store."
+      ]
+    }
+  ],
+  "hobby": [
+    {
+      "name": "FitBuddy",
+      "description": "Full-stack fitness platform with on-device ML pose detection, Supabase backend, and LLM-powered workout form and meal analysis. React creator web app for plan management.",
+      "repo": "",
+      "link": ""
+    },
+    {
+      "name": "World Tetris",
+      "description": "Word-based Tetris — arrange letters to form English words and score points.",
+      "repo": "https://github.com/AbhishekCode/word-tetris",
+      "link": "https://abhishekcode.github.io/word-tetris/"
+    },
+    {
+      "name": "Typing Game",
+      "description": "Test your typing speed with this browser game.",
+      "repo": "https://github.com/AbhishekCode/TypingGame",
+      "link": "https://abhishekcode.github.io/TypingGame/"
+    }
+  ],
+  "education": {
+    "degree": "B.Tech, Information Technology",
+    "school": "Dr. Rizvi College of Engineering · APJ Abdul Kalam Technological University",
+    "period": "2008 – 2012"
+  }
+}
