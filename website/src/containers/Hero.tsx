@@ -1,3 +1,4 @@
+import ResumeDownloadButton from "../components/ResumeDownloadButton";
 import type { PersonalData } from "../types";
 
 interface HeroProps {
@@ -59,15 +60,7 @@ export default function Hero({ profile }: HeroProps) {
           </div>
 
           <div className="mt-5 flex flex-wrap justify-center gap-2 md:justify-start">
-            {resume && (
-              <a
-                href={resume}
-                download="abhishek-resume.pdf"
-                className="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-700"
-              >
-                Download Resume
-              </a>
-            )}
+            {resume && <ResumeDownloadButton resumeUrl={resume} />}
             {contactLinks?.map((link, i) => (
               <a
                 key={i}

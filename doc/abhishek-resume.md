@@ -1,51 +1,52 @@
 # Abhishek Kumar Singh
 
-## Frontend-Focused Software Engineer with 13+ Years of Architecture and Performance
+Senior Frontend Engineer | 13+ Years
 
-Frontend-focused software engineer with 13+ years specializing in frontend architecture, performance optimization, and maintainable engineering. Delivers reliable UI experiences backed by testing, accessibility, and DevEx improvements. Helped build event-tech products acquired by Hyve and a SaaS platform serving 10+ clients — 1M+ meetings and $120M+ client revenue since 2023. Previously built fintech mobile apps at Nium/InstaReM.
+Pune, India | +91-9967596120 | abhishekcode1@gmail.com | linkedin.com/in/abhishekcode1 | github.com/AbhishekCode | abhishekcode.github.io
 
-## Contact Information
+## Summary
 
-Pune, India | +91-9967596120 | abhishekcode1@gmail.com | [linkedin.com/in/abhishekcode1](https://www.linkedin.com/in/abhishekcode1/) | [github.com/AbhishekCode](https://github.com/AbhishekCode) | [abhishekcode.github.io](https://abhishekcode.github.io/)
+Senior frontend engineer with 13+ years building React applications, shared UI systems, and reliable delivery practices. Strong in component architecture, TypeScript, testing, and developer experience. Key contributor to event-tech products acquired by Hyve and a SaaS platform serving 10+ enterprise clients (1M+ meetings, $120M+ client revenue since 2023). Earlier built fintech mobile apps at Nium/InstaReM.
 
 ## Skills
 
-Programming Languages: Java | JavaScript | TypeScript | HTML5 | CSS3  
-Frontend: React | React Router | Component Libraries | Design Systems | Single Page Applications | Progressive Web Apps  
-Quality and Accessibility: React Testing Library | Playwright | Jest | WCAG Accessibility | Unit and Integration Testing  
-Performance and Architecture: Bundle Optimization | Lazy Loading | Core Web Vitals | Performance Optimization | Maintainable Code  
-Backend and Tools: Spring Boot | Node.js | REST APIs | React Native | Git | CI/CD | Amazon Web Services
+Languages: JavaScript, TypeScript, HTML5, CSS3, Java  
+Frontend: React, React Router, TanStack Query, React Context, Component Libraries, Design Systems, SPAs, SCSS, Tailwind CSS  
+Quality: React Testing Library, Playwright, Jest, WCAG, Unit and Integration Testing  
+Performance and Tooling: Bundle Optimization, Lazy Loading, Core Web Vitals, Vite, Webpack, Git, CI/CD  
+Backend (as needed): REST APIs, Spring Boot, Node.js, Amazon Web Services
 
-## Work Experience
+## Experience
 
-**Personatech, Pune, India | Technical Lead | 03/2020 – Present**  
-*Technical Lead title · Staff-level IC (04/2023 – Present) · Senior Software Engineer (03/2020 – 04/2023)*  
-*Event-tech SaaS — 10+ enterprise clients · 1M+ meetings · $120M+ client revenue since 2023*
+**Technical Lead**  
+Personatech, Pune, India | Mar 2020 - Present  
+Event-tech SaaS - 10+ enterprise clients, 1M+ meetings, $120M+ client revenue since 2023
 
-- **Vertical products:** Part of the team that built Retail Meetup and Fintech Meetup, vertical event networking products acquired by Hyve after strong market performance.
-- **Event-tech SaaS platform:** Helped set up and build the platform now serving 10+ enterprise clients; since 2023, powered 1M+ one-on-one meetings and $120M+ in additional revenue for clients.
-- **Frontend quality:** Own shared React component library and UI patterns; increased frontend test coverage from near 0% to 40% with Playwright and React Testing Library.
-- **Hands-on IC delivery:** Operate as a staff-level IC shipping features end-to-end from Figma through React UI and Spring Boot APIs; mentor junior engineers on a task basis. Improved delivery speed by ~50% using AI workflows and automation.
+- Owned shared React components, hooks, and UI utilities (dynamic forms, validation, loading state, confirmation flows, datetime helpers) used across product surfaces.
+- Raised frontend test coverage from near 0% to ~40% with Playwright and React Testing Library; own unit-testing standards for shared UI.
+- Shipped core product flows including attendee profile, meeting acceptance, and session networking experiences.
+- Key contributor on vertical event products later acquired by Hyve, and on the multi-tenant SaaS platform serving enterprise clients.
+- Designed an internal product knowledge base and coding-agent skills to speed feature work; shared with the team (early adoption).
+- Ship features end-to-end from Figma through React UI, with Spring Boot API work when needed.
 
-**Nium (InstaReM), Mumbai, India | Senior Software Engineer | 02/2018 – 02/2020**
+**Senior Software Engineer**  
+Nium (InstaReM), Mumbai, India | Feb 2018 - Feb 2020
 
-- **Cross-border payments mobile app:** Built and maintained the InstaReM React Native app (iOS/Android) for production fintech users; integrated PhonePe Switch and hardened security for payment flows.
-- **Release ownership:** Owned App Store and Google Play releases, unit testing, and production monitoring for InstaReM and the Amaze card app.
+- Built and maintained the InstaReM React Native app (iOS/Android); created the InstaReM micro app for the PhonePe Switch platform and hardened security for payment flows.
+- Owned App Store and Google Play releases, unit testing, and production monitoring for InstaReM and the Amaze card app.
 
 **Earlier Experience**
 
-- **Tekhne (2016–2018):** Developed Smaken React SPA for the Netherlands market; improved load performance via lazy loading and bundle optimization.
+- **Tekhne (2016-2018):** Developed Smaken React SPA for the Netherlands market; improved load performance via lazy loading and bundle optimization.
 - **Courgette Concepts (2016):** Built Immidi marketing dashboard and React Native apps with Node.js/Koa APIs.
-- **BYOF Studios / CodeRed (2013–2016):** Shipped Bluff Party (Unity3D) and browser poker games; published Legendary Strike to iOS App Store.
-
-## Education
-
-**B.Tech, Information Technology, 2012** — Dr. Rizvi College of Engineering, India (2008–2012)
+- **BYOF Studios / CodeRed (2013-2016):** Shipped Bluff Party (Unity3D) and browser poker games; published Legendary Strike to iOS App Store.
 
 ## Projects
 
-**FitBuddy | React | Supabase | ML Kit | LLMs**  
-Fitness platform with on-device pose detection, Supabase/PostgreSQL backend, LLM-powered workout and meal analysis, and React creator web app.
+**FitBuddy** - React, Supabase, ML Kit, LLMs  
+Fitness platform with on-device pose detection, LLM-powered workout and meal analysis, and a React creator web app. Currently in closed testing: groups.google.com/g/fitbuddy-app-testing
 
-**World Tetris | [github.com/AbhishekCode/word-tetris](https://github.com/AbhishekCode/word-tetris)**  
-Browser-based word puzzle game in JavaScript deployed as a responsive static site.
+## Education
+
+**B.Tech, Information Technology**  
+Dr. Rizvi College of Engineering, India | 2008 - 2012

@@ -43,7 +43,7 @@ const enrichProfile = (profileData: PersonalData): PersonalData => {
   const data: PersonalData = {
     ...profileData,
     image: profileImage,
-    resume: "/abhishek-resume.pdf",
+    resume: "/files/resume-61fc2e3a6724f104.pdf",
   };
 
   if (data.contactLinks) {
