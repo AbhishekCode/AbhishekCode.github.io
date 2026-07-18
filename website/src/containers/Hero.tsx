@@ -56,11 +56,28 @@ export default function Hero({ profile }: HeroProps) {
                 {email}
               </a>
             )}
-            {phone && <span>{phone}</span>}
           </div>
 
           <div className="mt-5 flex flex-wrap justify-center gap-2 md:justify-start">
             {resume && <ResumeDownloadButton resumeUrl={resume} />}
+            {phone && (
+              <a
+                href={`tel:${phone.replace(/\s+/g, "")}`}
+                title={phone}
+                aria-label={`Call ${phone}`}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 text-slate-600 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:border-blue-700 dark:hover:bg-slate-700 dark:hover:text-blue-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                  aria-hidden="true"
+                >
+                  <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.01l-2.2 2.2z" />
+                </svg>
+              </a>
+            )}
             {contactLinks?.map((link, i) => (
               <a
                 key={i}
